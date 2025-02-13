@@ -274,189 +274,109 @@ footer a {
 }
 
  
-
 /* Contact Section */
-
 #contact {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
 
-        background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-        padding: 60px 20px;
+#contact h2 {
+    font-size: 2.2em;
+    color: #001D3B;
+    margin-bottom: 15px;
+}
 
-        text-align: center;
+/* Contact Info - Allows wrapping for smaller screens */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to next line */
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
 
-        border-radius: 10px;
+/* Each info box (phone & email) */
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    color: #001D3B;
+}
 
-    }
+/* Icon Styling */
+.info-box span {
+    font-size: 24px;
+    color: #FFD700;
+}
 
- 
+/* Link Styling */
+.info-box a {
+    color: #001D3B;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-    .contact-container {
-
-        max-width: 700px;
-
-        margin: 0 auto;
-
-        padding: 20px;
-
-        background: white;
-
-        border-radius: 10px;
-
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-    }
-
- 
-
-    #contact h2 {
-
-        font-size: 2.2em;
-
-        color: #001D3B;
-
-        margin-bottom: 15px;
-
-    }
-
- 
-
+/* Ensure phone and email stack on small screens */
+@media (max-width: 600px) {
     .contact-info {
-
-        display: flex;
-
-        justify-content: center;
-
-        gap: 30px;
-
-        margin-bottom: 20px;
-
-    }
-
- 
-
-    .info-box {
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 10px;
-
-        font-size: 1.1em;
-
-        color: #001D3B;
-
-    }
-
- 
-
-    .info-box span {
-
-        font-size: 24px;
-
-        color: #FFD700;
-
-    }
-
- 
-
-    .info-box a {
-
-        color: #001D3B;
-
-        text-decoration: none;
-
-        font-weight: 600;
-
-    }
-
- 
-
-    form {
-
-        display: flex;
-
         flex-direction: column;
-
-        gap: 15px;
-
+        align-items: center; /* Centers items when stacked */
     }
+}
 
- 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-    .input-group {
+.input-group {
+    text-align: left;
+}
 
-        text-align: left;
+label {
+    font-size: 1em;
+    color: #001D3B;
+    font-weight: bold;
+}
 
-    }
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
 
- 
+input:focus, textarea:focus {
+    border-color: #001D3B;
+    outline: none;
+}
 
-    label {
+button {
+    background-color: #001D3B;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        font-size: 1em;
-
-        color: #001D3B;
-
-        font-weight: bold;
-
-    }
-
- 
-
-    input, textarea {
-
-        width: 100%;
-
-        padding: 12px;
-
-        border: 1px solid #ddd;
-
-        border-radius: 5px;
-
-        font-size: 1em;
-
-        transition: border-color 0.3s ease;
-
-    }
-
- 
-
-    input:focus, textarea:focus {
-
-        border-color: #001D3B;
-
-        outline: none;
-
-    }
-
- 
-
-    button {
-
-        background-color: #001D3B;
-
-        color: white;
-
-        border: none;
-
-        padding: 12px 20px;
-
-        font-size: 1.1em;
-
-        border-radius: 5px;
-
-        cursor: pointer;
-
-        transition: background-color 0.3s ease;
-
-    }
-
- 
-
-    button:hover {
-
-        background-color: #003366;
-
-    }
+button:hover {
+    background-color: #003366;
+}
