@@ -273,8 +273,7 @@ footer a {
 
 }
 
- 
-/* Contact Section */
+ /* Contact Section */
 #contact {
     background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
     padding: 60px 20px;
@@ -297,22 +296,23 @@ footer a {
     margin-bottom: 15px;
 }
 
-/* Contact Info - Allows wrapping for smaller screens */
+/* Contact Info */
 .contact-info {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping to next line */
     justify-content: center;
     gap: 30px;
     margin-bottom: 20px;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
 }
 
-/* Each info box (phone & email) */
+/* Ensure phone and email stay on one line */
 .info-box {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 1.1em;
     color: #001D3B;
+    width: 100%; /* Full width by default */
 }
 
 /* Icon Styling */
@@ -328,11 +328,15 @@ footer a {
     font-weight: 600;
 }
 
-/* Ensure phone and email stack on small screens */
+/* Make the contact info stack on mobile */
 @media (max-width: 600px) {
     .contact-info {
-        flex-direction: column;
-        align-items: center; /* Centers items when stacked */
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center; /* Center items when stacked */
+    }
+
+    .info-box {
+        width: auto; /* Make sure the width shrinks back to auto on small screens */
     }
 }
 
