@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://plumbage.co.uk/</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
+
+  <url>
+    <loc>https://www.plumbage.co.uk/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.plumbage.co.uk/#services</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.plumbage.co.uk/#about</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.plumbage.co.uk/#contact</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.plumbage.co.uk/404.html</loc>
+    <priority>0.10</priority>
+  </url>
+
 </urlset>
+
