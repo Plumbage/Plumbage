@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="canonical" href="https://www.plumbage.co.uk/gallery.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | PlumbAge</title>
+    <meta name="description" content="Photo gallery of recent PlumbAge boiler, plumbing, heating and radiator work across South Wales.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+</head>
+<body><header>
+        <a href="index.html"><img src="logonotext.png" alt="PlumbAge Logo" class="logo"></a>
+        <p>Your local plumbing and gas experts.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="services.html" >Services</a></li>
+                <li><a href="about.html" >About Us</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery" class="gallery-section">
+            <div class="gallery-container">
+                <h1>Our Work Gallery</h1>
+                <div class="gallery-grid">
+                    <a class="gallery-photo" href="images/gallery/01.jpg"><img src="images/gallery/01.jpg" alt="PlumbAge plumbing and heating work photo 1" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/02.jpg"><img src="images/gallery/02.jpg" alt="PlumbAge plumbing and heating work photo 2" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/03.jpg"><img src="images/gallery/03.jpg" alt="PlumbAge plumbing and heating work photo 3" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/04.jpg"><img src="images/gallery/04.jpg" alt="PlumbAge plumbing and heating work photo 4" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/05.jpg"><img src="images/gallery/05.jpg" alt="PlumbAge plumbing and heating work photo 5" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/06.jpg"><img src="images/gallery/06.jpg" alt="PlumbAge plumbing and heating work photo 6" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/07.jpg"><img src="images/gallery/07.jpg" alt="PlumbAge plumbing and heating work photo 7" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/08.jpg"><img src="images/gallery/08.jpg" alt="PlumbAge plumbing and heating work photo 8" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/09.jpg"><img src="images/gallery/09.jpg" alt="PlumbAge plumbing and heating work photo 9" loading="lazy"></a>
+                    <a class="gallery-photo" href="images/gallery/10.jpg"><img src="images/gallery/10.jpg" alt="PlumbAge plumbing and heating work photo 10" loading="lazy"></a>
+                
+</div>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+            </div>
+<script>
+document.querySelectorAll('.gallery-photo').forEach(link=>{
+ link.addEventListener('click',function(e){
+  e.preventDefault();
+  document.getElementById('lightbox-img').src=this.href;
+  document.getElementById('lightbox').style.display='flex';
+ });
+});
+function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape') closeLightbox();});
+</script>
+        </section>
+    </main>
+<footer>
+        <p>&copy; 2025 PlumbAge. All rights reserved.</p>
+        <p>Call us at <a href="tel:07383081725">07383081725</a> | Email: <a href="mailto:info@plumbage.co.uk">info@plumbage.co.uk</a></p>
+    </footer>
+</body>
+</html>
