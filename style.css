@@ -182,8 +182,8 @@ button:hover,.button-link:hover{transform:translateY(-2px);box-shadow:0 12px 25p
     border:1px solid rgba(255,255,255,.55);
     background:var(--navy);
 }
-.gallery-photo:nth-child(1),.gallery-photo:nth-child(6),.gallery-photo:nth-child(10){grid-column:span 6;grid-row:span 2}
-.gallery-photo:nth-child(2),.gallery-photo:nth-child(3),.gallery-photo:nth-child(4),.gallery-photo:nth-child(5),.gallery-photo:nth-child(7),.gallery-photo:nth-child(8),.gallery-photo:nth-child(9){grid-column:span 3}
+.gallery-photo:nth-child(1),.gallery-photo:nth-child(6),.gallery-photo:nth-child(10),.gallery-photo:nth-child(15),.gallery-photo:nth-child(20){grid-column:span 6;grid-row:span 2}
+.gallery-photo:nth-child(2),.gallery-photo:nth-child(3),.gallery-photo:nth-child(4),.gallery-photo:nth-child(5),.gallery-photo:nth-child(7),.gallery-photo:nth-child(8),.gallery-photo:nth-child(9),.gallery-photo:nth-child(11),.gallery-photo:nth-child(12),.gallery-photo:nth-child(13),.gallery-photo:nth-child(14),.gallery-photo:nth-child(16),.gallery-photo:nth-child(17),.gallery-photo:nth-child(18),.gallery-photo:nth-child(19){grid-column:span 3}
 .gallery-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease, filter .45s ease}
 .gallery-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,29,59,.35));opacity:0;transition:.3s ease}
 .gallery-photo:hover img{transform:scale(1.06);filter:saturate(1.08) contrast(1.04)}
@@ -195,7 +195,7 @@ footer a{color:var(--gold);text-decoration:none;font-weight:700}
 @media(max-width:900px){
     .gallery-grid{grid-template-columns:repeat(6,1fr);grid-auto-rows:190px}
     .gallery-photo:nth-child(n){grid-column:span 3;grid-row:span 1}
-    .gallery-photo:nth-child(1),.gallery-photo:nth-child(6){grid-column:span 6;grid-row:span 2}
+    .gallery-photo:nth-child(1),.gallery-photo:nth-child(6),.gallery-photo:nth-child(11),.gallery-photo:nth-child(16){grid-column:span 6;grid-row:span 2}
 }
 @media(max-width:600px){
     header{padding:20px 12px 28px}
